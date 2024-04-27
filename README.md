@@ -28,3 +28,12 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 - `Data Modeling - Tabular Data Model.ipynb`: Develop a deep learning model that utilizes tabular data to predict price classification.
 - `Data Modeling - Image Model.ipynb`: Construct deep learning models specifically designed to work with guitar image data.
 - `Data Modeling - Ensemble Model.ipynb`: Develop ensemble models based on pre-trained tabular data model and image models.
+
+## Execution of the Project
+### Data Collection
+1. Open the Data Collection.ipynb file.
+2. Import necessary packages (cell 1).
+3. Download Guitar Info Webpages (cells 2 - 3): 
+   - Preparation: Before running cells 2 to 3, manually open the Chrome browser. Ensure that at least two tabs are active. Manually save one webpage as an MHTML file to the `guitar_pages` folder. This step sets the initial state for the automation script to continue similarly.
+   - Screen Resolution: Set your screen resolution to 1920 x 1080. This specific resolution helps the automation script to accurately locate the coordinates necessary for scrolling and loading all image URLs on the webpage.
+   - Execution: Proceed with cells 2 and 3 to automate the downloading of additional guitar information webpages.
