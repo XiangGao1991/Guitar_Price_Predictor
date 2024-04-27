@@ -75,5 +75,3 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 5. Process numerical and categorical features (cell 5)
 6. Augment images and prepare datasets (cell 6 - 9)： Load data from `guitar_resized_images` folder. Alternatively, use pre-processed images from the `guitar_resized_images` folder provided in the `Dataset` folder to skip all the steps in Data collection and Data Processing.
 7.  Train ensemble models based on pre-trained image and tabular data models (cell 10 - 19): Load model from `tabular_model.pkl`, `resnet_model.pkl`,`squeezenet_model.pkl`,`densenet_model.pkl`,`vgg16_model.pkl` files. Alternatively, use corresponding model files provided in the `Model` folder.
-
-
