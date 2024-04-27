@@ -50,5 +50,11 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 5. Crop Images (cells 4-5): Crop images to focus solely on the top soundboard of the guitars from the images stored in the `guitar_manually_filtered_images` folder. Save the processed images in the `guitar_cropped_images` folder and any failures in the `guitar_failed_cropped_images` folder.
 6. Resize and Pad Images (cells 6-7): Adjust the size and add padding if necessary from the images stored in the `guitar_cropped_images` folder. Save the resized images in the `guitar_resized_images` folder and any failures in the `guitar_failed_resized_images` folder.
 
-
-
+### Data Modeling - Tabular Data Model
+1. Open Notebook: Launch the `Data Modeling - Tabular Data Model.ipynb` file.
+2. Import Packages (cell 1): Load the necessary libraries.
+3. Configure PyTorch environment (cell 2 - 3)
+4. Bin price target for classification task (cell 4): Load data from `guitar_info.csv` file.
+5. Process numerical and categorical features (cell 5)
+6. Prepare datasets (cell 6 - 7)
+7. Train model for tabular data (cell 8 - 10): Save the model as `tabular_model.pkl` file. 
