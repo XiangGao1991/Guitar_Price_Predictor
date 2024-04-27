@@ -23,8 +23,8 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 - **Automation and Interface Control:** `pyautogui`
 
 ## Project Structure
-- `Data Collection.ipynb`: Collect guitar images from Guitar Center website.
-- `Data Processing.ipynb`: Process images to keep the top soundboard of guitar.
-- `Data Modeling - Tabular Data Model.ipynb`: Train deep learning model with tabular data.
-- `Data Modeling - Image Model.ipynb`: Train deep learning model with guitar images.
-- `Data Modeling - Ensemble Model.ipynb`: Train ensemble model based on pre-trained tabular data model and image models.
+- `Data Collection.ipynb`: Automate the collection of guitar images from the Guitar Center website.
+- `Data Processing.ipynb`: Process the collected images to isolate and retain only the top soundboard of each guitar.
+- `Data Modeling - Tabular Data Model.ipynb`: Develop a deep learning model that utilizes tabular data to predict price classification.
+- `Data Modeling - Image Model.ipynb`: Construct deep learning models specifically designed to work with guitar image data.
+- `Data Modeling - Ensemble Model.ipynb`: Develop ensemble models based on pre-trained tabular data model and image models.
