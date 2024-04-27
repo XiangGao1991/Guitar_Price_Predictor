@@ -31,21 +31,26 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 
 ## Execution of the Project
 ### Data Collection
-1. Open the Data Collection.ipynb file.
-2. Import necessary packages (cell 1).
+Follow these steps to gather and prepare guitar-related data:
+1. Open Notebook: Launch the `Data Collection.ipynb` file.
+2. Import Packages (cell 1): Load the necessary libraries .
 3. Download Guitar Info Webpages (cells 2 - 3): 
-   - Preparation: Before running cells 2 to 3, manually open the Chrome browser. Ensure that at least two tabs are active. Manually save one webpage as an MHTML file to the `guitar_pages` folder. This step sets the initial state for the automation script to continue similarly.
-   - Screen Resolution: Set your screen resolution to 1920 x 1080. This specific resolution helps the automation script to accurately locate the coordinates necessary for scrolling and loading all image URLs on the webpage.
-   - Execution: Proceed with cells 2 and 3 to automate the downloading of additional guitar information webpages.
-   - Result: Download guitar webpages to the `guitar_pages` folder.
-4. Parse the webpages for urls of guitar image (cell 4)
-5. Download guitar images (cells 5 - 7, resulting in downloading guitar images to the `guitar_images` folder)
-6. Save guitar information (cell 8, resulting in generating a `guitar_info.csv` file in the current folder)
+   - Preparation: Prior to executing the code cell, manually open the Chrome browser, ensure that at least two tabs are active, and manually save one webpage as an MHTML file in the `guitar_pages` folder. This setup simulates the initial state for the automation script.
+   - Screen Resolution: Set your screen resolution to 1920 x 1080 to ensure the script functions correctly, as it needs to locate specific coordinates on the screen.
+   - Execution: Automate the download of additional guitar information webpages.
+   - Result: All webpages are correctly downloaded to the `guitar_pages` folder.
+4. Extract Image URLs (cell 4): Parse the saved webpages for URLs of guitar images.
+5. Download Guitar Images (cells 5 - 7): Download images of guitars into the `guitar_images` folder.
+6. Save Guitar Information (cell 8): Collect and store guitar-related data into a `guitar_info.csv` file.
 
-### Data Collection
-1. Open the Data Collection.ipynb file.
-2. Import necessary packages (cell 1).
-3. Remove the background of guitar images (cell 2, dependent on the files in the `guitar_images` folder. You can skip the Data Collection and use the `guitar_images` folder provided in the `Dataset` folder, resulting in generating no-background images in the `guitar_no_background_images` folder)
-4. Manually remove invalid images (Manual effort, you can just copy-paste the `guitar_manually_filtered_images` folder provided in the `Dataset` folder)
-5. Crop the images to keep the top soundboard of guitars (cells 4 - 5, dependent on the files in the `guitar_no_background_images` folder, resulting in files in `guitar_cropped_images` and `guitar_failed_cropped_images` folders)
-6. Resize and pad the guitar images (cells 6 - 7, dependent on the files in the `guitar_cropped_images`, resulting in files in the `guitar_resized_images` and `guitar_failed_resized_images` folders)
+### Data Processing
+These steps detail the process of preparing the guitar images for analysis:
+1. Open Notebook: Launch the `Data Collection.ipynb` file.
+2. Import Packages (cell 1): Load the necessary libraries.
+3. Remove Backgrounds (cell 2): Automatically remove backgrounds from images stored in the `guitar_images` folder. Alternatively, use pre-processed images from the `guitar_no_background_images` folder provided in the `Dataset` folder.
+4. Manual Image Filtering (manual effort): Manually inspect and remove any invalid or undesirable images from images stored in the `guitar_no_background_images` folder. Alternatively, use pre-filtered images from the `guitar_manually_filtered_images` folder provided in the `Dataset` folder.
+5. Crop Images (cells 4-5): Crop the images to focus solely on the top soundboard of the guitars from images stored in the `guitar_manually_filtered_images` folder. Save the processed images in the `guitar_cropped_images` folder and any failures in the `guitar_failed_cropped_images` folder.
+6. Resize and Pad Images (cells 6-7): Adjust the size of the cropped images and add padding if necessary from images stored in the `guitar_cropped_images` folder. Save the resized images in the `guitar_resized_images` folder and any failures in the `guitar_failed_resized_images` folder.
+
+
+
