@@ -31,7 +31,6 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 
 ## Execution of the Project
 ### Data Collection
-Follow these steps to gather and prepare guitar-related data:
 1. Open Notebook: Launch the `Data Collection.ipynb` file.
 2. Import Packages (cell 1): Load the necessary libraries .
 3. Download Guitar Info Webpages (cells 2 - 3): 
