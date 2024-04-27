@@ -43,13 +43,12 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 6. Save Guitar Information (cell 8): Collect and store guitar-related data into a `guitar_info.csv` file.
 
 ### Data Processing
-These steps detail the process of preparing the guitar images for analysis:
-1. Open Notebook: Launch the `Data Collection.ipynb` file.
+1. Open Notebook: Launch the `Data Processing.ipynb` file.
 2. Import Packages (cell 1): Load the necessary libraries.
 3. Remove Backgrounds (cell 2): Automatically remove backgrounds from images stored in the `guitar_images` folder. Alternatively, use pre-processed images from the `guitar_no_background_images` folder provided in the `Dataset` folder.
 4. Manual Image Filtering (manual effort): Manually inspect and remove any invalid or undesirable images from images stored in the `guitar_no_background_images` folder. Alternatively, use pre-filtered images from the `guitar_manually_filtered_images` folder provided in the `Dataset` folder.
-5. Crop Images (cells 4-5): Crop the images to focus solely on the top soundboard of the guitars from images stored in the `guitar_manually_filtered_images` folder. Save the processed images in the `guitar_cropped_images` folder and any failures in the `guitar_failed_cropped_images` folder.
-6. Resize and Pad Images (cells 6-7): Adjust the size of the cropped images and add padding if necessary from images stored in the `guitar_cropped_images` folder. Save the resized images in the `guitar_resized_images` folder and any failures in the `guitar_failed_resized_images` folder.
+5. Crop Images (cells 4-5): Crop images to focus solely on the top soundboard of the guitars from the images stored in the `guitar_manually_filtered_images` folder. Save the processed images in the `guitar_cropped_images` folder and any failures in the `guitar_failed_cropped_images` folder.
+6. Resize and Pad Images (cells 6-7): Adjust the size and add padding if necessary from the images stored in the `guitar_cropped_images` folder. Save the resized images in the `guitar_resized_images` folder and any failures in the `guitar_failed_resized_images` folder.
 
 
 
