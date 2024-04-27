@@ -57,4 +57,12 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 4. Bin price target for classification task (cell 4): Load data from `guitar_info.csv` file.
 5. Process numerical and categorical features (cell 5)
 6. Prepare datasets (cell 6 - 7)
-7. Train model for tabular data (cell 8 - 10): Save the model as `tabular_model.pkl` file. 
+7. Train model for tabular data (cell 8 - 10): Save the model as `tabular_model.pkl` file.
+
+### Data Modeling - Image Model
+1. Open Notebook: Launch the `Data Modeling - Image Model.ipynb` file.
+2. Import Packages (cell 1): Load the necessary libraries.
+3. Configure PyTorch environment (cell 2 - 3)
+4. Bin price target for classification task (cell 4): Load data from `guitar_info.csv` file.
+5. Augment images and prepare datasets (cell 5 - 8): Load data from `guitar_resized_images` folder. Alternatively, use pre-processed images from the `guitar_resized_images` folder provided in the `Dataset` folder to skip all the steps in Data collection and Data Processing.
+6. Train models using different algorithms (cell 9 - 17): Save models as `resnet_model.pkl`,`squeezenet_model.pkl`,`densenet_model.pkl`,`vgg16_model.pkl` file.
