@@ -22,3 +22,9 @@ We set out to bridge this knowledge gap by developing a deep learning model that
 - **Web Development:** `Flask`
 - **Automation and Interface Control:** `pyautogui`
 
+## Project Structure
+- `Data Collection.ipynb`: Collect guitar images from Guitar Center website.
+- `Data Processing.ipynb`: Process images to keep the top soundboard of guitar.
+- `Data Modeling - Tabular Data Model.ipynb`: Train deep learning model with tabular data.
+- `Data Modeling - Image Model.ipynb`: Train deep learning model with guitar images.
+- `Data Modeling - Ensemble Model.ipynb`: Train ensemble model based on pre-trained tabular data model and image models.
