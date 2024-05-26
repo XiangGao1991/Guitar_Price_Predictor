@@ -1,7 +1,7 @@
 # Guitar_Price_Predictor
 
 ## Description
-This project is designed to develop an deep learning model to predict the resale value of second-hand acoustic guitars from images.
+This project is designed to develop a deep learning model to predict the resale value of second-hand acoustic guitars from images.
 
 In a marketplace as varied as the one for second-hand musical instruments, where the condition and brand significantly influence price, it's common to encounter uncertainty regarding fair market values. Our project was inspired by the eclectic mix of offerings on platforms such as Facebook Marketplace, which highlighted the need for a reliable pricing guide for both buyers and sellers.
 
